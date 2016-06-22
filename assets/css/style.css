@@ -4,3 +4,71 @@
  *| @author Richard Blondet
  *|=======================================|
 */
+body {
+	background-color: #f7f7f7;
+}
+#profile-card {
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 290px;
+	border: none;
+	-webkit-box-shadow: 0 1px 3px #d4d4d4;
+	-moz-box-shadow: 0 1px 3px #d4d4d4;
+	box-shadow: 0 1px 3px #d4d4d4;
+	border-radius: 12px;
+	-webkit-transition: all 0.5s 0.2s ease;
+	-moz-transition: all 0.5s 0.2s ease;
+	-ms-transition: all 0.5s 0.2s ease;
+	-o-transition: all 0.5s 0.2s ease;
+	transition: all 0.5s 0.2s ease;
+	opacity: 1;
+	transform: translateY(0);
+}
+body.is-loading #profile-card {
+	opacity: 0;
+	transform: translateY(30px);;
+}
+.profile-pic-wrapper {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.profile-pic-wrapper img {
+    border-radius: 50%;
+}
+.text-center {
+	text-align: center;
+}
+h1,
+h2,
+h3 {
+	color: #51515d;
+}
+#my-name {
+	font-family: 'Lato';
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#description p {
+	font-size: 16px;
+	text-align: center;
+	color: #777;
+	font-weight: 300;
+	font-family: 'Lato';
+}
+#description:before {
+	content: "";
+	position: relative;
+	width: 40%;
+	height: 1px;
+	background-color: #ccc;
+	margin: 0 auto;
+	display: block;
+}
+.panel-body {
+	padding-bottom: 40px;
+}
+#description p strong {
+	font-family: 'Roboto Slab';
+}
